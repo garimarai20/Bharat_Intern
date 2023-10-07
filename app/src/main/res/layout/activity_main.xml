@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/temperature_converter">
+
+    <EditText
+        android:id="@+id/getVal"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_margin="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Enter Temperature"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/showAns"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/c2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#84FFFF"
+            android:layout_marginLeft="20dp"
+            android:text="Celsius to Fahrenheit"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/f2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#84FFFF"
+            android:layout_marginLeft="20dp"
+            android:text="Fahrenheit to Celsius"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+</RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/ansBtn"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#8C9EFF"
+            android:textColor="@color/white"
+            android:text="Convert"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/againBtn"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#8C9EFF"
+            android:text="Clear"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+</LinearLayout>
